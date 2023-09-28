@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*------------Student Showcase------*/
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(''); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional - keeps the image fixed while scrolling */
+    height: 100vh; /* Ensure the background covers the entire viewport height */
+}
+
+/* Style the links (assuming you want to style them) */
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Style the Student Showcases section */
+.StudentShowcases {
+    text-align: center;
+    padding: 100px 0; /* Add padding to the top and bottom as needed */
+    color: white; /* Text color on top of the background image */
+}
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: blue;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.showcase{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: brown;
+}
+.showcase-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
