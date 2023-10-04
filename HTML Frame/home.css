@@ -28,6 +28,15 @@ li strong {
     font-weight: bold;
 }
 
+footer{
+    text-align:center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
 /*Content Styles*/
 .box {
     background-color: #fff;
