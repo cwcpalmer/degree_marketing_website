@@ -71,3 +71,23 @@ li strong {
     justify-content: space-between; 
 }
 
+footer{
+    text-align:center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.dark-mode-button {
+    position: fixed;
+    bottom: -5px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
