@@ -1,0 +1,7 @@
+.contact-image {
+  width: 200px; 
+  height: 200px;
+}
+.contact-image img{
+    height: 100%;
+}
