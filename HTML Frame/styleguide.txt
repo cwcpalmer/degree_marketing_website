@@ -1,0 +1,34 @@
+=== Light Mode ===
+
+Font Family: Arial, sans-serif
+
+Background Color:
+
+    Body: #f4f4f4 - Light Gray
+    Footer: #fff - White
+    Boxes: #fff - White
+
+Text Color:
+
+    Text: #666 - Dark Gray
+    Footer: #333 - Slightly Darker Gray
+    Boxes: #333 - Slightly Darker Gray
+    Links: #0073e6 - Navy Blue
+
+=== Dark Mode ===
+
+Font Family: Arial, sans-serif
+
+Background Color:
+
+    Body: #333 - Slightly Darker Gray
+    Footer: #222 - Very Dark Gray
+    Boxes: #222 - Very Dark Gray
+
+Text Color:
+
+    Body: #fff - White
+    Text: #fff - Light Gray
+    Footer: #fff - White
+    Boxes: #ccc - Light Gray
+    Links: #5bc0de - Light Blue
