@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333; /* Default text color */
+    margin:0 10vw 6vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Header Styles */
+.header {
+    left: 0;
+    top: 0;
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(header-bg.webp);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    padding-bottom: 50px;
+}
+
+.header-inner {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+box-shadow: #333 0 1px 20px;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+}
+    .header-inner .nav-links ul li a {
+        color: #000;
+    }
+.header-spacer{
+    height: 180px;
+}
+nav {
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5vw;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+.contributor-name {
+    padding: 2vh;
+    font-size: 28px;
+    text-align: center;
+}
+
+.group-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1vh 0;
+    
+} 
+
+.contributor-container {
+    padding: 2%;
+    margin: 2vw;
+    display: flex;
+    background-color: #FFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    flex-direction: column;
+    width: 25vw;
+
+} 
+    .contributor-container .photo img{
+        width: 25vw;
+        height: 25vw;
+        object-fit: cover;
+        float: left;
+    }
+    .contributor-container .description{
+        float: left;
+        width: auto;
+        margin-left: 2vw;
+        text-align: center;
+    }
+    
+    .contributor-container .description h3 {
+        font-size: 2vw;
+    }
+
+    .contributor-container .description p {
+        font-size: 1.4vw;
+    }
+
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+/* Custom Text Colors */
+.nav-links a,
+.hero-btn {
+    color: #fff; /* Navigation links and hero button text color */
+}
+
+.text-box h1,
+.text-box p {
+    color: #fff; /* Text color inside the header text-box */
+}
+
+.text-box .hero-btn {
+    background-color: #333; /* Hero button background color */
+}
+
+.text-box .hero-btn:hover {
+    background-color: #555; /* Hover color for hero button */
+}
+footer{
+    text-align: center;
+    border-top: 1px solid #aaa;
+    color: #fff;
+    background-color: rgb(9, 73, 88);
+    padding: 10px;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-links ul li {
+        padding: 8px 6px;
+    }
+}
+
+@media (max-width: 584px) {
+    .group-container {
+        flex-direction: column;
+    }
+    .contributor-container {
+        width: auto;
+        align-items: center;
+    }
+
+    .contributor-container .description {
+        padding: 2%;
+    }
+
+    .contributor-container .description p {
+        font-size: 4vw;
+    }
+    .contributor-container .description h3 {
+        font-size: 6vw;
+    }
+
+}
